@@ -9,9 +9,10 @@ def generate_password(length):
     lowercase = string.ascii_lowercase
     uppercase = string.ascii_uppercase
     numbers = string.digits
+    symbols='!@#$%^&*()'
     
     # Combine the character sets into a single set of possible characters
-    possible_chars = lowercase + uppercase + numbers
+    possible_chars = lowercase + uppercase + numbers+symbols
     # Generate a random password by selecting characters from the possible set
     password = ""
     for i in range(length):
